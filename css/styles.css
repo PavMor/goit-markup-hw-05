@@ -34,7 +34,7 @@ li {
 /* Header */
 .header {
   display: flex;
-  padding-top: 24px;
+  /* padding-top: 24px; */
   /* padding-bottom: 24px; */
   border-bottom: 1px solid #ececec;
 }
@@ -53,6 +53,7 @@ li {
   display: flex;
   margin-right: 93px;
   align-items: center;
+  padding-top: 24px;
   padding-bottom: 25px;
 
   font-family: "Raleway", sans-serif;
@@ -74,12 +75,13 @@ li {
 
 .nav-item {
   margin-right: 50px;
+  padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
   display: block;
 }
 
-.nav-item::after {
+.link-nav::after {
   content: "";
   position: absolute;
   left: 0;
@@ -93,7 +95,7 @@ li {
   transition: transform 250ms var(--timing-function);
 }
 
-.nav-item:hover::after {
+.link-nav:hover::after {
   transform: scaleX(1);
 }
 
@@ -121,6 +123,7 @@ li {
   display: flex;
   justify-content: flex-end;
   padding-left: 0;
+  padding-top: 32px;
   padding-bottom: 32px;
   margin: 0;
   margin-left: auto;
