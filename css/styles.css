@@ -240,11 +240,13 @@ li {
   align-items: center;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   top: 0;
   right: 0;
   margin: 8px;
   border-radius: 50%;
   stroke-width: 0;
+
   stroke: currentColor;
   fill: currentColor;
   background: var(--header-bg-color);
