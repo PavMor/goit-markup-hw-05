@@ -90,7 +90,7 @@ li {
   border-radius: 2px;
   background-color: var(--accent-color);
   transform: scaleX(0);
-  transition: opacity 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 }
 
 .nav-item:hover::after {
