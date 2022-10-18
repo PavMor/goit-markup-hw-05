@@ -842,7 +842,7 @@ li {
 }
 
 .filtr-item:hover::before {
-  opacity: 1;
+  opacity: ;
 }
 
 .filtr-item {
@@ -863,6 +863,11 @@ li {
   overflow: hidden;
 }
 
+.text-box {
+  position: relative;
+  overflow: hidden;
+}
+
 .image-box::before {
   display: inline-block;
   position: absolute;
@@ -874,6 +879,20 @@ li {
   transition: transform 250ms var(--timing-function);
 }
 
+.text-box::before {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 370px;
+  height: 294px;
+  background-color: rgb(33, 150, 243, 0.9);
+  transform: translateY(0%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.filtr-picture:hover .text-box::before {
+  transform: translateY(-100%);
+}
 .image-item {
   display: block;
 }
