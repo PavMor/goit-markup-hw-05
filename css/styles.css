@@ -854,12 +854,6 @@ li {
   overflow: hidden;
 }
 
-.filtr-picture {
-  position: relative;
-  text-decoration: none;
-  overflow: hidden;
-}
-
 .image-box {
   position: relative;
   overflow: hidden;
@@ -895,11 +889,8 @@ li {
 }
 
 .text-box-item {
-  display: inline-block;
   position: absolute;
   margin: 0;
-  width: 370px;
-  height: 294px;
   padding-top: 63px;
   padding-right: 24px;
   padding-bottom: 63px;
@@ -910,10 +901,12 @@ li {
   color: #ffffff;
   transform: translateY(50%);
   transition: transform 250ms var(--timing-function);
+  opacity: 0;
 }
 
 .filtr-picture:hover .text-box-item {
   transform: translateY(-50%);
+  opacity: 1;
 }
 
 .filtr-item:hover,
