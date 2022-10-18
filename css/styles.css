@@ -842,7 +842,7 @@ li {
 }
 
 .filtr-item:hover::before {
-  opacity: ;
+  opacity: 1;
 }
 
 .filtr-item {
@@ -855,7 +855,9 @@ li {
 }
 
 .filtr-picture {
+  position: relative;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .image-box {
@@ -863,9 +865,12 @@ li {
   overflow: hidden;
 }
 
+.image-item {
+  display: block;
+}
+
 .text-box {
   position: relative;
-  overflow: hidden;
 }
 
 .image-box::before {
@@ -879,40 +884,36 @@ li {
   transition: transform 250ms var(--timing-function);
 }
 
-.text-box::before {
-  display: inline-block;
-  position: absolute;
-  content: " ";
-  width: 370px;
-  height: 294px;
-  background-color: rgb(33, 150, 243, 0.9);
-  transform: translateY(0%);
-  transition: transform 250ms var(--timing-function);
+.filtr-picture:hover .image-box::before {
+  transform: translateY(0);
 }
 
-.filtr-picture:hover .text-box::before {
-  transform: translateY(-100%);
-}
-.image-item {
-  display: block;
-}
-
-.text-box-item {
+.text-box {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-box-item {
+  display: inline-block;
   position: absolute;
   margin: 0;
   width: 370px;
   height: 294px;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transform: translateY(50%);
+  transition: transform 250ms var(--timing-function);
 }
 
-.filtr-picture:hover .image-box::before {
-  transform: translateY(0);
+.filtr-picture:hover .text-box-item {
+  transform: translateY(-50%);
 }
 
 .filtr-item:hover,
