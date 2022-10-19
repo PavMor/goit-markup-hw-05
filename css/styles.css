@@ -119,6 +119,10 @@ li {
   letter-spacing: 0.02em;
   position: relative;
   color: var(--secondary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poc {
@@ -145,6 +149,10 @@ li {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope {
@@ -223,6 +231,10 @@ li {
   color: #ffffff;
   background-color: var(--accent-color);
   cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -555,6 +567,10 @@ li {
   background-color: #ffffff;
   fill: #afb1b8;
   cursor: pointer;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .websites-links:hover,
@@ -619,6 +635,10 @@ li {
   fill: #afb1b8;
   border-radius: 4px;
   cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-group:hover,
@@ -712,6 +732,10 @@ li {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address a:last-child {
@@ -762,6 +786,10 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .websites-links-footer:hover,
@@ -815,6 +843,10 @@ li {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
