@@ -870,7 +870,8 @@ li {
   padding: 0;
 }
 
-.filtr-item:hover {
+.filtr-item:hover,
+.filtr-item:focus {
   opacity: 1;
 }
 
@@ -926,7 +927,8 @@ li {
   height: 0;
 }
 
-.filtr-picture:hover .text-box {
+.filtr-picture:hover .text-box,
+.filtr-picture:focus .text-box {
   transform: translateY(0%);
   opacity: 1;
 }
